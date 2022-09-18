@@ -1,0 +1,50 @@
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+import 'vant/lib/index.css'
+import { Cell ,PullRefresh ,List ,Grid, GridItem ,Popup ,ContactCard ,AddressEdit ,AddressList ,Icon ,Skeleton ,SubmitBar ,Stepper,SwipeCell ,Checkbox, CheckboxGroup,Toast ,Dialog ,Form, Field, CellGroup,Button, Tag, ImagePreview , Image as VanImage, Swipe, SwipeItem, Lazyload, Badge, Sidebar, SidebarItem, Collapse, CollapseItem, Tab, Tabs, Card  } from 'vant';
+
+
+createApp(App)
+    .use(Cell)
+    .use(PullRefresh)
+    .use(List)
+    .use(GridItem)
+    .use(Grid)
+    .use(Popup)
+    .use(ContactCard)
+    .use(AddressEdit)
+    .use(AddressList)
+    .use(Icon)
+    .use(Skeleton)
+    .use(SubmitBar)
+    .use(Stepper)
+    .use(SwipeCell)
+    .use(Checkbox)
+    .use(CheckboxGroup)
+    .use(Toast)
+    .use(Dialog)
+    .use(Form)
+    .use(Field)
+    .use(CellGroup)
+    .use(Button)
+    .use(Tag)
+    .use(ImagePreview)
+    .use(VanImage)
+    .use(Card)
+    .use(Tabs)
+    .use(Tab)
+    .use(CollapseItem)
+    .use(Collapse)
+    .use(SidebarItem)
+    .use(Sidebar)
+    .use(Badge)
+    .use(Lazyload,{
+      loading:require('./assets/images/default.jpg')
+    })
+    .use(SwipeItem)
+    .use(Swipe)
+    .use(store)
+    .use(router)
+    .mount('#app')
